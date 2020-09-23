@@ -1,0 +1,32 @@
+@primary-color: hsl(263, 46%, 48%);
+@white-color: hsl(0, 0, 100%);
+@black-color: hsl(0, 0, 0);
+@text-color: #333;
+@height-header: 126px;
+@height-top-menu: 76px;
+@text-size: 14px;
+@theme-size:16px;
+@ads-main-size: 12px;
+@head-bottom-color: darken(@white-color, 50%);
+@icon-color: lighten(@black-color, 70%);
+
+//btn style mixin
+.btn-common(@width, @height, @background-color: @white-color) {
+        display: block;
+        width: @width;
+        height: @height;
+        background-color: @background-color;
+        line-height: @height;
+        text-align: center;
+        &:hover {
+            color: @black-color;
+            cursor: pointer;
+        }
+}
+// Text style mixin
+.style-common(@color: @white-color, @font-size: @text-size, @font-weight: 500) {
+        color: @color;
+        font-size: @font-size;
+        font-weight: @font-weight;
+}
+
